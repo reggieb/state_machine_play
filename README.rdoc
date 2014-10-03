@@ -1,28 +1,14 @@
-== README
+== State Machine Play
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I need to use a state machine in a new project and am having a play.
 
-Things you may want to cover:
+I've decided that finite_machine is the tool to use:
 
-* Ruby version
+https://github.com/peter-murach/finite_machine
 
-* System dependencies
+At the moment, this is very simple: just a Job model with a business
+process defined within JobProcess. JobProcess defines a FiniteMachine that
+is associated with Job.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This allows me to separate the process rules out from the model, and use
+the Finite Machine splendidness.

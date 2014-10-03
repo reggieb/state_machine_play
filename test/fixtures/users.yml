@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+creator:
+  email: someone@example.com
+  
+business_partner:
+  email: someone.else@example.com
+  
+pmo:
+  email: pmo@example.com
+  
+
+

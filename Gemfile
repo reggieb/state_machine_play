@@ -13,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
  
 gem 'therubyracer',  platforms: :ruby
 
-gem 'finite_machine', path: File.expand_path('../../finite_machine', File.dirname(__FILE__))
+gem 'finite_machine' #, path: File.expand_path('../../finite_machine', File.dirname(__FILE__))
 
 
 
